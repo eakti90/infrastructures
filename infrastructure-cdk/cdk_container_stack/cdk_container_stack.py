@@ -24,7 +24,7 @@ class ContainerStack(core.Stack):
                                                            cpu=256,
                                                            desired_count=2,
                                                            task_image_options=_ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
-                                                               image=_ecs.ContainerImage.from_registry('131852824746.dkr.ecr.eu-central-1.amazonaws.com/cdk-container-stack-repo:1')),
+                                                               image=_ecs.ContainerImage.from_registry('amazon/amazon-ecs-sample')),
                                                            memory_limit_mib=512,
                                                            public_load_balancer=True)
         containerised_app_repository.grant_pull(containerised_app_ecs_application.task_definition.obtain_execution_role())
