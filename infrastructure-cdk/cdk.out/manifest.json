@@ -1,0 +1,940 @@
+{
+  "version": "11.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "cdk-container-stack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "cdk-container-stack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/cdk-container-stack/Containerised-App-Repository/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppRepository181F38DF",
+            "trace": [
+              "new Repository (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecr\\lib\\repository.js:205:26)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPC69636DDA",
+            "trace": [
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:355:25)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet1SubnetB629AEAC",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:679:24)",
+              "new PublicSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:844:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet1RouteTableA5B915F6",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:695:23)",
+              "new PublicSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:844:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet1RouteTableAssociationD1079161",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:700:9)",
+              "new PublicSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:844:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet1DefaultRoute73F9BB0F",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:735:23)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:388:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:387:32)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet1EIPE3C34D4A",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:864:27)",
+              "NatGatewayProvider.configureNat (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:77:33)",
+              "Vpc.createNatGateways (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:535:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:393:22)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet1NATGatewayD1F268BC",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:862:21)",
+              "NatGatewayProvider.configureNat (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:77:33)",
+              "Vpc.createNatGateways (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:535:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:393:22)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet2SubnetE7E45768",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:679:24)",
+              "new PublicSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:844:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet2RouteTableECD37D05",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:695:23)",
+              "new PublicSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:844:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet2RouteTableAssociation067BA501",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:700:9)",
+              "new PublicSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:844:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:577:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet2DefaultRouteEBFA0315",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:735:23)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:388:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:387:32)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet2EIP5EEFD99F",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:864:27)",
+              "NatGatewayProvider.configureNat (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:77:33)",
+              "Vpc.createNatGateways (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:535:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:393:22)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPublicSubnet2NATGateway0D667421",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:862:21)",
+              "NatGatewayProvider.configureNat (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:77:33)",
+              "Vpc.createNatGateways (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:535:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:393:22)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPrivateSubnet1Subnet0F3072F9",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:679:24)",
+              "new PrivateSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:884:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPrivateSubnet1RouteTable9990A6B1",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:695:23)",
+              "new PrivateSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:884:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPrivateSubnet1RouteTableAssociation3F64E3BE",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:700:9)",
+              "new PrivateSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:884:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPrivateSubnet1DefaultRoute3DAE94D9",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:782:23)",
+              "NatGatewayProvider.configureSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:92:16)",
+              "NatGatewayProvider.configureNat (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:86:18)",
+              "Vpc.createNatGateways (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:535:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:393:22)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPrivateSubnet2Subnet5259327C",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:679:24)",
+              "new PrivateSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:884:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPrivateSubnet2RouteTableF64E962D",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:695:23)",
+              "new PrivateSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:884:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPrivateSubnet2RouteTableAssociation6FDA455C",
+            "trace": [
+              "new Subnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:700:9)",
+              "new PrivateSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:884:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:582:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:561:32)",
+              "Vpc.createSubnets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:557:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:376:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCPrivateSubnet2DefaultRoute90485307",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:782:23)",
+              "NatGatewayProvider.configureSubnet (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:92:16)",
+              "NatGatewayProvider.configureNat (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.js:86:18)",
+              "Vpc.createNatGateways (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:535:18)",
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:393:22)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCIGW0293CCBE",
+            "trace": [
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:380:25)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-VPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppVPCVPCGW7E162F5A",
+            "trace": [
+              "new Vpc (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.js:383:25)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-ECS-Cluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppECSCluster86B29B23",
+            "trace": [
+              "new Cluster (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\cluster.js:76:25)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/LB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceLB4454FBBF",
+            "trace": [
+              "new BaseLoadBalancer (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\shared\\base-load-balancer.js:35:26)",
+              "new ApplicationLoadBalancer (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-load-balancer.js:28:9)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.js:54:89)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:22:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/LB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceLBSecurityGroup7BF60712",
+            "trace": [
+              "new SecurityGroup (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.js:213:30)",
+              "new ApplicationLoadBalancer (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-load-balancer.js:34:56)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.js:54:89)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:22:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/LB/SecurityGroup/to cdkcontainerstackContainerisedAppFargateServiceSecurityGroupD9734462:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceLBSecurityGrouptocdkcontainerstackContainerisedAppFargateServiceSecurityGroupD973446280D51AA068",
+            "trace": [
+              "SecurityGroup.addEgressRule (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.js:70:13)",
+              "SecurityGroup.addEgressRule (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.js:343:19)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:81:31",
+              "ReactiveList.forEachAndForever (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:226:13)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:80:51",
+              "ReactiveList.forEachAndForever (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:226:13)",
+              "Connections.allowTo (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:79:30)",
+              "Connections.allowFrom (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:112:31)",
+              "ApplicationListener.registerConnectable (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.js:322:33)",
+              "ApplicationTargetGroup.registerConnectable (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.js:120:22)",
+              "Object.attachToApplicationTargetGroup (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.js:233:29)",
+              "FargateService.attachToApplicationTargetGroup (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.js:194:47)",
+              "ApplicationTargetGroup.addTarget (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.js:71:35)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.js:162:26)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:77:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/LB/PublicListener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceLBPublicListenerAB5D7A5F",
+            "trace": [
+              "new BaseListener (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\shared\\base-listener.js:21:26)",
+              "new ApplicationListener (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.js:32:9)",
+              "ApplicationLoadBalancer.addListener (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-load-balancer.js:73:16)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.js:66:38)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:22:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/LB/PublicListener/ECSGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceLBPublicListenerECSGroup36D9894C",
+            "trace": [
+              "new TargetGroupBase (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\shared\\base-target-group.js:44:25)",
+              "new ApplicationTargetGroup (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.js:26:9)",
+              "ApplicationListener.addTargets (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.js:228:23)",
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.js:71:42)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:22:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/LoadBalancerDNS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceLoadBalancerDNSB0C55F1D",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.js:131:9)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:22:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/ServiceURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceServiceURL643152BC",
+            "trace": [
+              "new ApplicationLoadBalancedServiceBase (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.js:132:9)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:22:9)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/TaskDef/TaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceTaskDefTaskRoleE758F423",
+            "trace": [
+              "new Role (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:72:22)",
+              "new TaskDefinition (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.js:86:43)",
+              "new FargateTaskDefinition (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-task-definition.js:25:9)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:32:35)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/TaskDef/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceTaskDefC3A2EEF3",
+            "trace": [
+              "new TaskDefinition (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.js:92:25)",
+              "new FargateTaskDefinition (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-task-definition.js:25:9)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:32:35)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/TaskDef/web": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "Proper policies need to be attached before pulling from ECR repository, or use 'fromEcrRepository'.",
+            "trace": [
+              "Annotations.addMessage (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\annotations.js:94:42)",
+              "Annotations.addWarning (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\annotations.js:37:14)",
+              "RepositoryImage.bind (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\images\\repository.js:40:42)",
+              "new ContainerDefinition (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\container-definition.js:112:40)",
+              "FargateTaskDefinition.addContainer (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.js:249:16)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:45:51)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/TaskDef/web/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceTaskDefwebLogGroupE53B63B1",
+            "trace": [
+              "new LogGroup (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-logs\\lib\\log-group.js:156:26)",
+              "AwsLogDriver.bind (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\log-drivers\\aws-log-driver.js:45:48)",
+              "new ContainerDefinition (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\container-definition.js:114:50)",
+              "FargateTaskDefinition.addContainer (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.js:249:16)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:45:51)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/TaskDef/ExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceTaskDefExecutionRole00B1B46B",
+            "trace": [
+              "new Role (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:72:22)",
+              "FargateTaskDefinition.obtainExecutionRole (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.js:324:35)",
+              "AwsLogDriver.bind (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\log-drivers\\aws-log-driver.js:48:69)",
+              "new ContainerDefinition (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\container-definition.js:114:50)",
+              "FargateTaskDefinition.addContainer (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.js:249:16)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:45:51)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/TaskDef/ExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceTaskDefExecutionRoleDefaultPolicy222F1B5F",
+            "trace": [
+              "new Policy (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.js:56:26)",
+              "Role.addToPrincipalPolicy (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:205:34)",
+              "Function.addToPrincipal (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:90:65)",
+              "LogGroup.grant (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-logs\\lib\\log-group.js:96:26)",
+              "LogGroup.grantWrite (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-logs\\lib\\log-group.js:88:21)",
+              "AwsLogDriver.bind (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\log-drivers\\aws-log-driver.js:48:23)",
+              "new ContainerDefinition (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\container-definition.js:114:50)",
+              "FargateTaskDefinition.addContainer (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\task-definition.js:249:16)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:45:51)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/Service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateService3ABC1342",
+            "trace": [
+              "new BaseService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.js:137:25)",
+              "new FargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-service.js:38:9)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:59:24)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/Service/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceSecurityGroup20EC9367",
+            "trace": [
+              "new SecurityGroup (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.js:213:30)",
+              "FargateService.configureAwsVpcNetworkingWithSecurityGroups (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.js:441:31)",
+              "new FargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\fargate\\fargate-service.js:57:14)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:59:24)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/Containerised-App-Fargate-Service/Service/SecurityGroup/from cdkcontainerstackContainerisedAppFargateServiceLBSecurityGroupA1C9C2D4:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContainerisedAppFargateServiceSecurityGroupfromcdkcontainerstackContainerisedAppFargateServiceLBSecurityGroupA1C9C2D480639F32BF",
+            "trace": [
+              "SecurityGroup.addIngressRule (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.js:55:13)",
+              "SecurityGroup.addIngressRule (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.js:305:19)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:106:31",
+              "ReactiveList.forEachAndForever (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:226:13)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:105:51",
+              "ReactiveList.forEachAndForever (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:226:13)",
+              "Connections.allowFrom (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ec2\\lib\\connections.js:104:30)",
+              "ApplicationListener.registerConnectable (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-listener.js:322:33)",
+              "ApplicationTargetGroup.registerConnectable (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.js:120:22)",
+              "Object.attachToApplicationTargetGroup (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.js:233:29)",
+              "FargateService.attachToApplicationTargetGroup (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs\\lib\\base\\base-service.js:194:47)",
+              "ApplicationTargetGroup.addTarget (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.js:71:35)",
+              "ApplicationLoadBalancedFargateService.addServiceAsTarget (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\base\\application-load-balanced-service-base.js:162:26)",
+              "new ApplicationLoadBalancedFargateService (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\aws-ecs-patterns\\lib\\fargate\\application-load-balanced-fargate-service.js:77:14)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "Kernel._create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8432:34)",
+              "Kernel.create (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8173:29)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:22:30)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:9",
+              "visit (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:185:9)",
+              "visit (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:182:9)",
+              "injectMetadataResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:117:5)",
+              "Object.synthesize (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\stage.js:100:41)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8248:134",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8248:107",
+              "Kernel._ensureSync (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8841:28)",
+              "Kernel.invoke (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8248:34)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ],
+        "/cdk-container-stack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:30:35)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:9",
+              "visit (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:185:9)",
+              "visit (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:182:9)",
+              "injectMetadataResources (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:117:5)",
+              "Object.synthesize (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\hamit\\AppData\\Local\\Temp\\jsii-kernel-dN3Wst\\node_modules\\@aws-cdk\\core\\lib\\stage.js:100:41)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8248:134",
+              "Kernel._wrapSandboxCode (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8860:24)",
+              "C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8248:107",
+              "Kernel._ensureSync (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8841:28)",
+              "Kernel.invoke (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:8248:34)",
+              "KernelHost.processRequest (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9757:36)",
+              "KernelHost.run (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9720:22)",
+              "Immediate._onImmediate (C:\\Users\\hamit\\AppData\\Local\\Temp\\tmp84sjtpll\\lib\\program.js:9721:46)",
+              "processImmediate (internal/timers.js:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "cdk-container-stack"
+    }
+  }
+}
