@@ -1,0 +1,167 @@
+Parameters:
+  DynamoDBTableName:
+    Description: DynamoDB Table Name
+    Type: String
+    ConstraintDescription: must be a valid DynamoDB name.
+  BucketName:
+    Description: Name of the S3 bucket you will deploy the CSV file to
+    Type: String
+    ConstraintDescription: must be a valid bucket name.
+Resources:
+  DynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName:
+        Ref: DynamoDBTableName
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+      - AttributeName: id
+        AttributeType: S
+      KeySchema:
+      - AttributeName: id
+        KeyType: HASH
+      Tags:
+      - Key: Name
+        Value:
+          Ref: DynamoDBTableName
+  LambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service:
+            - lambda.amazonaws.com
+            - s3.amazonaws.com
+          Action:
+          - sts:AssumeRole
+      Path: "/"
+      ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      - arn:aws:iam::aws:policy/AWSLambdaInvocation-DynamoDB
+      - arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+      Policies:
+      - PolicyName: policyname
+        PolicyDocument:
+          Statement:
+          - Effect: Allow
+            Resource: "*"
+            Action:
+            - dynamodb:PutItem
+            - dynamodb:BatchWriteItem
+  CsvToDynamoDBLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Handler: index.lambda_handler
+      Role:
+        Fn::GetAtt:
+        - LambdaRole
+        - Arn
+      Code:
+        ZipFile:
+          Fn::Join:
+          - "\n"
+          - - import json
+            - import boto3
+            - import os
+            - import csv
+            - import codecs
+            - import sys
+            - import urllib.parse
+            - ''
+            - s3 = boto3.resource('s3')
+            - dynamodb = boto3.resource('dynamodb')
+            - ''
+            - tableName = os.environ['table']
+            - ''
+            - 'def lambda_handler(event, context):'
+            - ''
+            - ''
+            - '   print("Received event: " + str(event))'
+            - "   bucket = event['Records'][0]['s3']['bucket']['name']"
+            - "   key = urllib.parse.unquote_plus(event['Records'][0]['s3']['object']['key'], encoding='utf-8')"
+            - ''   
+            - "   obj = get_s3Object(bucket, key)"
+            - "   try:"
+            - "       table = dynamodb.Table(tableName)"
+            - "   except:"
+            - '       print("Error loading DynamoDB table. Check if table was created
+              correctly and environment variable.")'
+            - ''
+            - "   batch_size = 100"
+            - "   batch = []"
+            - ''
+            - "   #DictReader is a generator; not stored in memory"
+            - "   for row in csv.DictReader(codecs.getreader('utf-8')(obj)):"
+            - "      if len(batch) >= batch_size:"
+            - "         write_to_dynamo(batch)"
+            - "         batch.clear()"
+            - ''
+            - "      batch.append(row)"
+            - ''
+            - "   if batch:"
+            - "      write_to_dynamo(batch)"
+            - ''
+            - "   return {"
+            - "      'statusCode': 200,"
+            - "      'body': json.dumps('Uploaded to DynamoDB Table')"
+            - "   }"
+            - ''
+            - ''
+            - 'def get_s3Object(bucket, key):'
+            - "   try:"
+            - "      obj = s3.Object(bucket, key).get()['Body']"
+            - "      return obj"
+            - "   except:"
+            - '      print("S3 Object could not be opened. Check environment variable. ")'
+            - ''
+            - ''
+            - 'def write_to_dynamo(rows):'
+            - "   try:"
+            - "      table = dynamodb.Table(tableName)"
+            - "   except:"
+            - '      print("Error loading DynamoDB table. Check if table was created
+              correctly and environment variable.")'
+            - ''
+            - "   try:"
+            - "      with table.batch_writer() as batch:"
+            - "         for i in range(len(rows)):"
+            - "            batch.put_item("
+            - "               Item=rows[i]"
+            - "            )"
+            - "   except:"
+            - '      print("Error executing batch_writer")'
+      Runtime: python3.7
+      Timeout: 900
+      MemorySize: 3008
+      Environment:
+        Variables:
+          table:
+            Ref: DynamoDBTableName
+  S3Bucket:
+    DependsOn:
+    - CsvToDynamoDBLambdaFunction
+    - BucketPermission
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName:
+        Ref: BucketName
+      AccessControl: BucketOwnerFullControl
+      NotificationConfiguration:
+        LambdaConfigurations:
+        - Event: s3:ObjectCreated:*
+          Function:
+            Fn::GetAtt:
+            - CsvToDynamoDBLambdaFunction
+            - Arn
+  BucketPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName:
+        Ref: CsvToDynamoDBLambdaFunction
+      Principal: s3.amazonaws.com
+      SourceAccount:
+        Ref: AWS::AccountId
+Outputs: {}
